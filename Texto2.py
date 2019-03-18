@@ -61,6 +61,7 @@ std_lensX = np.std(lenX)
 ###Filter the images found and risize them
 
 resize_crop_images=[]  
+
 for i in crop_images:
     if i.shape[0]+(std_lensY/2) <mean_lensY: #check if the box has the mean len
         continue
