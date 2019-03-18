@@ -1,5 +1,5 @@
 
-image= imread('A.png');
+image= imread('b.png');
 I = rgb2gray(image);
 [mserRegions, mserConnComp] = detectMSERFeatures(I, 'RegionAreaRange',[200 8000],'ThresholdDelta',4);
 
